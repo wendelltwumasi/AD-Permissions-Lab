@@ -20,15 +20,15 @@ This lab demonstrates the implementation of secure file sharing and access contr
 * Provisioned domain user accounts to simulate different staff roles.
 * Created a **Security Group** and assigned the authorized user as a member.
 
-![AD Users and Groups](images/01-ou-and-users.png)
-![Security Group Members](images/02-security-group.png)
+![AD Users and Groups](/01-ou-and-users.png)
+![Security Group Members](/02-security-group.png)
 
 ### 2. Network Share Configuration
 * Created the target directory on the server file system.
 * Enabled **Advanced Sharing** for the folder.
 * Configured the Share-level permissions to grant **Full Control** to `Domain Users` to ensure network accessibility, leaving specific restrictions to the NTFS layer.
 
-![Folder Sharing Settings](images/03-folder-sharing.png)
+![Folder Sharing Settings](/03-folder-sharing.png)
 
 ### 3. Enforcing NTFS Permissions (Access Control)
 * Opened the folder's **Security** properties and advanced settings.
@@ -36,7 +36,7 @@ This lab demonstrates the implementation of secure file sharing and access contr
 * Removed standard user permissions and added the newly created **Security Group**.
 * Assigned explicit **Read/Write/Modify** permissions to the group while blocking all other non-administrative domain accounts.
 
-![NTFS Explicit Permissions](images/04-ntfs-permissions.png)
+![NTFS Explicit Permissions](/04-ntfs-permissions.png)
 
 ---
 
@@ -46,8 +46,8 @@ To validate the configuration, I logged into the client VM domain member under b
 
 * **Authorized User Test:** Successfully authenticated, mapped the network folder, and managed files.
   
-  ![Access Granted Verification](images/05-access-allowed.png)
+  ![Access Granted Verification](/05-access-allowed.png)
 
 * **Unauthorized User Test:** Correctly blocked by the system, throwing an explicit "Windows cannot access... Access is denied" security prompt.
 
-  ![Access Denied Verification](images/06-access-denied.png)
+  ![Access Denied Verification](/06-access-denied.png)
