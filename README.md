@@ -42,7 +42,7 @@ This lab demonstrates the implementation of secure file sharing and access contr
 
 ## Verification & Testing
 
-To validate the configuration, I logged into the client VM domain member under both user profiles to test the network path access (`\\<Server-IP-or-Name>`).
+To validate the configuration, I logged into the client VM domain member under both user profiles to test the network path access (`\\<WIN-JIFQTFFRT3V>`).
 
 * **Authorized User Test:** Successfully authenticated, mapped the network folder, and managed files.
   
